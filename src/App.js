@@ -5,9 +5,10 @@ import Image2 from '../src/assets/me-elevator.jpg';
 import Portfolio from '../src/assets/portfolio.jpg';
 import Portfolio1 from '../src/assets/portfolio1.jpg';
 import Portfolio2 from '../src/assets/portfolio2.jpg';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-solid-svg-icons';
+import { FaFacebook, FaGithub, FaTwitter } from 'react-icons/fa';
+import { BsFillEnvelopeFill } from 'react-icons/bs';
 import './App.css';
+
 
 function App() {
   return (
@@ -106,12 +107,16 @@ function App() {
 
       {/* Footer section */}
       <footer>
-        <a href='mailto:veronicamaxwell152@gmail.com' className='email-link'>Email Me: veronicamaxwell152@gmail.com</a>
+        <h1 className='footer-title'>Contact Me</h1>
         <ul className='social-list'>
-          <li className='social-list-item'><a href=''>Facebook</a></li>
-          <li className='social-list-item'><a href=''>Twitter</a></li>
-          <li className='social-list-item'><a href=''>Github</a></li>
+          <li><a href='mailto:veronicamaxwell152@gmail.com'><BsFillEnvelopeFill className='social-item' /></a></li>
+          <li><a href=''><FaFacebook className='social-item' /></a></li>
+          <li><a href=''><FaTwitter className='social-item' /></a></li>
+          <li><a href=''><FaGithub className='social-item' /></a></li>
         </ul>
+        <div className='copywrite'>
+          <p>© 2020 Made with ❤ by Vmaxtacular</p>
+        </div>
       </footer>
 
     </div>
