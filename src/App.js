@@ -68,7 +68,7 @@ function App() {
       {/* About Me section */}
       <section className='about-me' id='about'>
         <h2 className='section-title title-about'>Who I am</h2>
-        <p className='section-subtitle subtitle-about'>Full Stack Web Developer || Former Chef</p>
+        <p className='section-subtitle subtitle-about'>MERN Stack Pro || Former Chef</p>
         <div className='about-body'>
           <p>Shaman pickled glossier 8-bit 90's microdosing snackwave copper mug
            schlitz pork belly mumblecore lo-fi bitters kickstarter. Man braid 

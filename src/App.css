@@ -223,4 +223,51 @@ h3 {
   }
 }
 
+.about-me {
+  max-width: 850px;
+  margin: 0 auto;
+}
 
+.about-img {
+  box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:  
+      'title img'
+      'subtitle img'
+      'text img';
+    grid-column-gap: 2em;  
+  }
+
+  .title-about {
+    grid-area: title;
+    margin-bottom: 1.5rem;
+    font-size: 4.2rem;
+  }
+
+  .subtitle-about {
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    width: calc(100% + 15em);
+    padding-left: 2em;
+    padding-right: calc(200px + 3em);
+    font-size: 1.2rem;
+  }
+
+  .title-about,
+  .subtitle-about {
+    grid-column: 1;
+  }
+
+  .about-img {
+    grid-area: img;
+    margin-top: 2.2em;
+    margin-left: 1.5em;
+    z-index: 2;
+  }
+}
