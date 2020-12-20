@@ -5,6 +5,7 @@ import MyServices from './components/my-services/my-services.component';
 import AboutMe from './components/about-me/about-me.component';
 import MyWork from './components/my-work/my-work.component';
 import Footer from './components/footer/footer.component';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 
