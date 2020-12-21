@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../button/button.component';
+import { DiMongodb } from 'react-icons/di';
 import './my-services.style.css';
 
 const MyServices = () => {
@@ -9,7 +9,7 @@ const MyServices = () => {
                 <h2 className='section-title title-services'>What I do</h2>
                 <div className='services'>
                 <div className='service'>
-                    <h3>Design & Development</h3>
+                    <h3 className='service-title'>Design & Development</h3>
                     <p>I'm baby brooklyn pour-over gastropub hell of cardigan, cliche 
                     freegan whatever swag XOXO craft beer pabst lomo chartreuse jean 
                     shorts. Neutra poke schlitz vinyl put a bird on it locavore. Portland 
@@ -17,20 +17,31 @@ const MyServices = () => {
                 </div>
                 <div className='service'>
                     <h3>E-Commerce</h3>
-                    <p>Shaman pickled glossier 8-bit 90's microdosing snackwave copper 
-                    mug schlitz pork belly mumblecore lo-fi bitters kickstarter. Man 
-                    braid mlkshk lomo farm-to-table. Typewriter deep v pug chillwave 
-                    biodiesel poke godard mixtape pork belly slow-carb cray.</p>
+                    <p>I'm baby brooklyn pour-over gastropub hell of cardigan, cliche 
+                    freegan whatever swag XOXO craft beer pabst lomo chartreuse jean 
+                    shorts. Neutra poke schlitz vinyl put a bird on it locavore. Portland 
+                    before they sold out enamel pin letterpress.</p>
                 </div>
                 <div className='service'>
                     <h3>Wordpress</h3>
-                    <p>Shaman pickled glossier 8-bit 90's microdosing snackwave copper 
-                    mug schlitz pork belly mumblecore lo-fi bitters kickstarter. Man 
-                    braid mlkshk lomo farm-to-table. Typewriter deep v pug chillwave 
-                    biodiesel poke godard mixtape pork belly slow-carb cray.</p>
+                    <p>I'm baby brooklyn pour-over gastropub hell of cardigan, cliche 
+                    freegan whatever swag XOXO craft beer pabst lomo chartreuse jean 
+                    shorts. Neutra poke schlitz vinyl put a bird on it locavore. Portland 
+                    before they sold out enamel pin letterpress.</p>
                 </div>
                 </div>
-                    <Button />
+                <div className='my-stack'>
+                    <h2 className='stack-title'>I build with:</h2>
+                    <ul className='my-stack-list'>
+                        <li className='fab fa-html5'></li>
+                        <li className='fab fa-sass'></li>
+                        <li className='fab fa-react'></li>
+                        <li className='fab fa-node'></li>
+                        <li className='mongo'><DiMongodb /></li>
+                        <li className='fab fa-wordpress-simple'></li>
+                        <li className='fab fa-github'></li>
+                    </ul>
+                </div>
             </section>
         </div>
     )

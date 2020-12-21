@@ -1,0 +1,91 @@
+h3 {
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.my-services.my-services {
+    background-color: var(--clr-dark);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../../assets/portfolio.jpg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--clr-light);
+    text-align: center;
+    width: 80vw;
+  }
+  
+  .title-services {
+    color: var(--clr-accent);
+    position: relative;
+    font-size: 3.7rem;
+  }
+  
+  .title-services::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.4em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.5;
+  }
+  
+  .service {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  @media (min-width: 800px) {
+    .services {
+      display: flex;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 3rem;
+    }
+  
+    .service + .service {
+      margin-left: 5em;
+    }
+  }
+ 
+
+  .my-stack {
+      background-color: orange;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 6px;
+  }
+
+  .stack-title {
+      padding: 1.5rem 3rem 1.8rem;
+      font-size: 3.5rem;
+      letter-spacing: 1px;
+  }
+
+  .my-stack-list {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 1.8rem;
+      font-size: 3rem;
+      color: black;
+  }
+
+  .mongo {
+      transform: translate(0, -25%);
+  }
+
+  @media(max-width: 600px) {
+
+    .stack-title {
+        font-size: 2rem;
+    }
+
+    .my-stack-list {
+        font-size: 1.5rem;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+  }
