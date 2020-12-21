@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  background: lightblue;
+  background:var(--clr-light);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
