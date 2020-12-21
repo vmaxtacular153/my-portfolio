@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../button/button.component';
 import './my-services.style.css';
 
 const MyServices = () => {
@@ -29,7 +30,7 @@ const MyServices = () => {
                     biodiesel poke godard mixtape pork belly slow-carb cray.</p>
                 </div>
                 </div>
-                <a href='#mywork' className='btn'>My Work</a>
+                    <Button />
             </section>
         </div>
     )

@@ -1,15 +1,112 @@
-.navbar-container {
-    margin-bottom: 2.5em;
-    width: 85vw;
-}
-.logo {
-    max-width: 150px;
+.navbar-items {
+    background: transparent;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 3em;
+    padding-top: 2rem;
 }
 
-nav {
-    background: transparent;
-    font-size: 1.3em;
+.logo {
+    max-width: 150px;
+    transform: translate(-175%, 0%);
+    cursor: pointer;
 }
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70ww;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.nav-links:hover {
+    text-decoration: none;
+    color: orange;
+    transition: all 0.2s ease-out;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-items {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 80vh;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+    }
+
+    .nav-menu.active {
+        background: orange;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 10;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .nav-links:first-child {
+        padding-top: 5rem;
+    }
+
+    .nav-links:hover {
+        color: white;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(20%, -15%);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-200%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+}
+
+
 
 
 

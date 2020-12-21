@@ -1,29 +1,43 @@
 import React from 'react';
 import logo from '../../assets/vmaxtacular-logo.png';
-import { Navbar, NavDropdown } from 'react-bootstrap';
+import { MenuItems } from '../menu-items/menu-items.component';
 import './header.style.css';
-import { Nav } from 'react-bootstrap';
+class Header extends React.Component {
+    state = { clicked: false }
 
-const Header = () => {
-    return (
-        <div className='navbar-container'>
-            <Navbar collapseOnSelect expand="lg">
-                <Navbar.Brand href="#home">
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked});
+    }
+    
+    render () {
+
+        return (
+            <nav className='navbar-items'>
+                <div>
                     <img src={logo} className='logo' />
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className='ml-auto'>
-                            <Nav.Link className='px-3 text-dark' href="#">Home</Nav.Link>
-                            <Nav.Link className='px-3 text-dark' href="#">My Work</Nav.Link>
-                            <Nav.Link className='px-3 text-dark' eventKey={2} href="#">
-                                Contact Me
-                            </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-        </div>
-    )
-}
+                </div>
+                <div 
+                className='menu-icon' 
+                onClick={this.handleClick}
+                >
+            <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                </div>
+                <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+                    {MenuItems.map((item, index) => {
+                        return (
+                            <li key={index}><a 
+                            className={item.cName} 
+                            href={item.url}
+                            >
+                            {item.title}
+                            </a></li>
+                        )
+                    })}
+                </ul>
+            </nav>
+        )
+    }
+};
 
 export default Header;
+
