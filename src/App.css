@@ -242,51 +242,6 @@ footer {
   }
 }
 
-/* Portfolio section */
-
-.my-work {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
-  text-align: center;
-}
-
-.title-work {
-  font-size: 4rem;
-}
-
-.subtitle-work {
-  color: var(--clr-accent);
-  font-weight: var(--fw-bold);
-  margin-bottom: 2em;
-  letter-spacing: .2rem;
-}
-
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.portfolio-item {
-  background: var(--clr-dark);
-  overflow: hidden;
-}
-
-.portfolio-img {
-  transition: transform 350ms cubic-bezier(.5, 0, .5, 1),
-  opacity 200ms linear;
-  ;
-}
-
-.portfolio-item:focus {
-  position: relative;
-  z-index: 2;
-}
-
-.portfolio-img:hover,
-.portfolio-img:hover:focus .portfolio-img {
-  transform: scale(1.1);
-  opacity: .75;
-}
 
 .footer-title {
   color: var(--clr-light);

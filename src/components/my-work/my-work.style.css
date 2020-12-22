@@ -1,0 +1,24 @@
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+  }
+  
+  .title-work {
+    font-size: 4rem;
+    justify-content: center;
+  }
+  
+  .subtitle-work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    letter-spacing: .2rem;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .75rem;
+    margin-top: 1rem;
+    padding: 1rem 1rem 1.5rem;
+  }
