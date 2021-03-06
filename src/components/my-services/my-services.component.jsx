@@ -31,7 +31,7 @@ const MyServices = () => {
                 </div>
                 </div>
                 <div className='my-stack'>
-                    <h2 className='stack-title'>I build with:</h2>
+                    
                     <ul className='my-stack-list'>
                         <li className='fab fa-html5'></li>
                         <li className='fab fa-sass'></li>
